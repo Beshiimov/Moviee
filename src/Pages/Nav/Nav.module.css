@@ -1,0 +1,71 @@
+.nav {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: #2E2E2E;
+    padding: 130px 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.li {
+    margin: 10px 10px;
+    list-style: none;
+}
+
+.li a {
+    display: block;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    transition: all .3s ease;
+}
+
+.li .icon {
+    box-sizing: content-box;
+    height: 17px;
+    width: 17px;
+    padding-right: 10px;
+
+}
+
+.li a[class="active"]{
+    background: #1F1F1F;
+    color: #fff;
+}
+
+.li a:hover {
+    background: rgba(31, 31, 31, 0.51);
+}
+
+.li a path {
+    transition: all .3s ease;
+
+}
+
+.li a[class="active"] path {
+    fill: #FF158B;
+}
+
+.profile {
+    position: relative;
+    bottom: 10px;
+}
+
+.TMDB {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 30px;
+}

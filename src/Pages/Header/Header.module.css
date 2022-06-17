@@ -1,0 +1,86 @@
+.header {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    padding: 0 2vw;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: rgba(46, 46, 46, 0.8);
+    backdrop-filter: blur(20px) brightness(80%);
+}
+
+.logo {
+    font-family: 'Poppins', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 51px;
+    color: #FF158B;
+    text-decoration: none;
+}
+
+.input__box {
+    width: 867px;
+    height: 45px;
+    margin: 0 1vw;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #202020;
+    border-radius: 10px;
+}
+
+.searchIcon {
+    height: 15px;
+    width: 15px;
+    padding-right: 15px;
+}
+
+.search {
+    height: 100%;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    line-height: 21px;
+    background-color: #202020;
+    border-radius: 10px;
+    border: 0;
+}
+
+.search:focus {
+    outline: 0;
+}
+
+.buttons {
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification, .settings {
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    border: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202020;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.notification:hover, .settings:hover {
+    filter: brightness(120%);
+}
+.notification:active, .settings:active {
+    filter: brightness(90%);
+}
+

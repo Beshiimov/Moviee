@@ -1,0 +1,131 @@
+.homePage {
+    margin: 15px;
+}
+.cinemas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cinema {
+    border-radius: 7px;
+    height: 500px;
+    flex-grow: 1;
+    flex-basis: 300px;
+    position: relative;
+    margin: 10px;
+    transition: all .3s ease;
+}
+
+.cinema:hover {
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.6);
+}
+
+.body {
+    height: 100%;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(15px) brightness(60%);
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 7px;
+    transition: all .5s ease;
+    padding: 0 15px;
+}
+
+.cinema:hover .body {
+    opacity: 1;
+    padding: 20px 15px;
+    z-index: 2;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 2;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    display: -webkit-box;
+    display: box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    margin-bottom: 15px;
+}
+
+.overview {
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 12;
+    -webkit-line-clamp: 12;
+    line-clamp: 12;
+    display: -webkit-box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+}
+
+.bodyBottom {
+    padding: 5% 2% 0 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.popularity {}
+
+.releaseData {}
+
+.voteAverage {
+    font-size: 18px;
+    color: #FF158B;
+    opacity: 0.8;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-weight: bold;
+}
+
+.poster {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.poster img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pageNav {
+    width: 100%;
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.pagination {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+.pages {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
